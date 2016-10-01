@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="pages.Detail_CreateTask" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Panel>
+				<content>
+					<VBox>
+						<Label text="Task Name" labelFor="idTaskName"></Label>
+						<Input type="text" id="idTaskName" class="sapUiSmallMarginBotton"></Input>
+						<Label text="Responsible" labelFor="idRespName"></Label>
+						<Input id="idRespName" type="text" class="sapUiSmallMarginBottom" showSuggestion="true" suggestionItems="{/People}">
+							<suggestionItems>
+								<core:Item text="{Name}"></core:Item>
+							</suggestionItems>
+						</Input>
+						<Label text="Task text" labelFor="idTaskText"></Label>
+						<Input type="text" id="idTaskText" class="sapUiSmallMarginBottom"></Input>
+						<Label text="Date" labelFor="idDate"></Label>
+						<DatePicker id="idDate" placeholder="Select date" class="sapUiLargeMarginBottom"></DatePicker>
+						<Button text="Create"></Button>
+					</VBox>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</core:View>

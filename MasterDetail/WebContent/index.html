@@ -25,14 +25,18 @@
 			var detailPage3 = sap.ui.view({id:"detail3Id", viewName:"pages.Detail_Write", type:sap.ui.core.mvc.ViewType.JS});
 			var detailPage4 = sap.ui.view({id:"detail4Id", viewName:"pages.Detail_ChatRoom", type:sap.ui.core.mvc.ViewType.JS});
 			var detailPage5 = sap.ui.view({id:"detail5Id", viewName:"pages.Detail_TaskTimeline", type:sap.ui.core.mvc.ViewType.XML});
+			var detailPage6 = sap.ui.view({id:"detail6Id", viewName:"pages.Detail_Calendar", type:sap.ui.core.mvc.ViewType.XML});
 			var detailPage8 = sap.ui.view({id:"detail8Id", viewName:"pages.Detail_People", type:sap.ui.core.mvc.ViewType.JS});
+			var createTaskPage = sap.ui.view({id:"idCreateTask", viewName:"pages.Detail_CreateTask", type:sap.ui.core.mvc.ViewType.XML});
 			oSplitApp.addMasterPage(masterPage);
 			oSplitApp.addDetailPage(detailPage1)
 					.addDetailPage(detailPage2)
 					.addDetailPage(detailPage3)
 					.addDetailPage(detailPage4)
 					.addDetailPage(detailPage5)
-					.addDetailPage(detailPage8);
+					.addDetailPage(detailPage6)
+					.addDetailPage(detailPage8)
+					.addDetailPage(createTaskPage);
 			oSplitApp.setInitialDetail("detail1Id");
 			oSplitApp.setInitialMaster("idMaster");
 			//oSplitApp.setDefaultTransitionNameDetail("fade");

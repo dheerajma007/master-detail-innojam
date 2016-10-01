@@ -35,7 +35,7 @@ sap.ui.jsview("pages.Detail_People", {
  				path: "/PeopleTiles",
  				template: tile
  		 		
- 			}
+ 			},
  		});
  		page.addContent(oContainer);
  		return page;

@@ -69,5 +69,9 @@ sap.ui.controller("pages.Detail_People", {
 //	onExit: function() {
 //
 //	}
+	
+	onPersonTilePress: function(){
+		console.log('Pressed');
+	}
 
 });

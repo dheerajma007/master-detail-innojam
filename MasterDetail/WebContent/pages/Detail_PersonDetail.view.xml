@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:controls="controls" xmlns:l="sap.ui.layout"
+		controllerName="pages.Detail_PersonDetail" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<l:VerticalLayout>
+				<Panel id="idPersonalDetailsPanel">
+					<l:HorizontalLayou>
+						<controls:RoundedTile icon="sap-icon://person-placeholder"
+ 											iconColor="{iconColor}"
+ 											bgColor="{bgColor}"
+ 											title="{title}"
+ 											borderColor="5px solid #ffffff">
+						</controls:RoundedTile>
+					</l:HorizontalLayou>
+				</Panel>
+				<Panel id="idPersonalContentPanel">
+				</Panel>
+			</l:VerticalLayout>
+		</content>
+	</Page>
+</core:View>

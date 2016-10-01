@@ -24,7 +24,8 @@ sap.ui.jsview("pages.Detail_ChatRoom", {
  			icon: "sap-icon://{icon}",
  			number: "{number}",
  			title: "{title}",
- 			info: "{info}"
+ 			info: "{info}",
+ 			press: "onChatTilePress"
  		});
  		var oContainer = new sap.m.TileContainer("idTileContainer", {
  			tiles: {

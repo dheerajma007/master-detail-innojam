@@ -1,0 +1,33 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:commons="sap.suite.ui.commons" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified"
+		controllerName="pages.Detail_Calendar" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<VBox alignItems="Center">
+			<l:VerticalLayout>
+				<l:content>
+					<u:Calendar id="idCalendar" months="2"></u:Calendar>
+					<Button press="onCreateTaskClick" text="Create Task"></Button>
+					<Panel id="idTaskPanel">
+					<commons:Timeline id="idTaskTimeline" 
+							content="{/TodaysTasks}"
+							enableScroll="false"
+							sortOldestFirst="true"
+							showHeaderBar="false">
+						<commons:content>
+						<commons:TimelineItem
+							dateTime  = "Date(1407049200000)"
+							userName = "SomeUser"
+							userNameClickable = "true"
+							title = "Some Task"
+							icon = "sap-icon://notes"
+							text = "Task to be done">						
+						</commons:TimelineItem>
+						</commons:content>
+					</commons:Timeline>
+					</Panel>
+				</l:content>
+			</l:VerticalLayout>
+		</VBox>
+		</content>
+	</Page>
+</core:View>
