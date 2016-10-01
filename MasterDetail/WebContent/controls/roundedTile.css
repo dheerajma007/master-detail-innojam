@@ -2,12 +2,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	border: 1px solid #dddddd;
+	border: 5px solid #ffffff;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 	background-color: #ffffff;
 	display: inline-block;
-	transition-property: transform3d;
-	transition-duration: 0.2s;
 	margin: 0.5rem;
 	border-radius: 110px;
 	width: 12rem;

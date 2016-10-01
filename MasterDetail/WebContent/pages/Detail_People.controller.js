@@ -10,30 +10,30 @@ sap.ui.controller("pages.Detail_People", {
 		var peopleData = {
 				"PeopleTiles" : [
 				                   {
-				                	   	"icon": "manager",
-				            			"iconColor": "#ffffff",
-				            			"bgColor": "rgb(0, 102, 255)",
+				                	   	"icon": "customer",
+				            			"iconColor": "#333333",
+				            			"bgColor": "rgb(255, 255, 255)",
 				            			"title": "Sumant",
-				            			"borderColor": "rgb(57, 123, 110)",
+				            			"borderColor": "5px solid #dddddd", //"rgb(57, 123, 110)",
 				                   },
 				                   {
-				                	   	"icon": "manager",
-				            			"iconColor": "#ffffff",
-				            			"bgColor": "rgb(0, 102, 255)",
+				                	   	"icon": "person-placeholder",
+				            			"iconColor": "#333333",
+				            			"bgColor": "rgb(255, 255, 255)",
 				            			"title": "Sathish",
 				            			"borderColor": "rgb(57, 123, 110)",
 				                   },
 				                   {
 				                	   	"icon": "manager",
-				            			"iconColor": "#ffffff",
-				            			"bgColor": "rgb(0, 102, 255)",
+				            			"iconColor": "#333333",
+				            			"bgColor": "rgb(255, 255, 255)",
 				            			"title": "Partha",
 				            			"borderColor": "rgb(57, 123, 110)",
 				                   },
 				                   {
 				                	   	"icon": "manager",
-				            			"iconColor": "#ffffff",
-				            			"bgColor": "rgb(0, 102, 255)",
+				            			"iconColor": "#333333",
+				            			"bgColor": "rgb(255, 255, 255)",
 				            			"title": "Dheeraj",
 				            			"borderColor": "rgb(57, 123, 110)",
 				                   }]

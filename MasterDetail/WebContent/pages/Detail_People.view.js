@@ -24,11 +24,11 @@ sap.ui.jsview("pages.Detail_People", {
 		});
  		
  		var tile = new controls.RoundedTile({
- 			icon: "sap-icon://{icon}",
+ 			icon: "sap-icon://person-placeholder",
  			iconColor: "{iconColor}",
  			bgColor: "{bgColor}",
  			title: "{title}",
- 			borderColor: "{borderColor}"
+ 			borderColor: "5px solid #ffffff",
  		});
  		var oContainer = new sap.m.TileContainer("idPeopleTileContainer", {
  			tiles: {
