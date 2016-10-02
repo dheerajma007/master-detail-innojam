@@ -16,7 +16,7 @@ sap.ui.jsview("pages.Detail_People", {
 	createContent : function(oController) {
 		//console.log
  		var page = new sap.m.Page({
-			title: "Title",
+			title: "People",
 			enableScrolling: false,
 			content: [
 			
@@ -29,6 +29,10 @@ sap.ui.jsview("pages.Detail_People", {
  			bgColor: "{bgColor}",
  			title: "{title}",
  			borderColor: "5px solid #ffffff",
+ 			press: function()
+ 			{
+ 				console.log('Person pressed');
+ 			}
  		});
  		var oContainer = new sap.m.TileContainer("idPeopleTileContainer", {
  			tiles: {

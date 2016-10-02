@@ -14,7 +14,7 @@ sap.ui.jsview("pages.Detail_KnowledgeWarehouse", {
 	*/ 
 	createContent : function(oController) {
  		return new sap.m.Page({
-			title: "Title",
+			title: "Knowledge Warehouse",
 			content: [
 			
 			]

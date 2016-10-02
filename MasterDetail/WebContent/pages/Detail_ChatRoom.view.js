@@ -14,7 +14,7 @@ sap.ui.jsview("pages.Detail_ChatRoom", {
 	*/ 
 	createContent : function(oController) {
  		var page = new sap.m.Page({
-			title: "Title",
+			title: "Chat Room",
 			enableScrolling: false,
 			content: [
 			
@@ -25,8 +25,16 @@ sap.ui.jsview("pages.Detail_ChatRoom", {
  			number: "{number}",
  			title: "{title}",
  			info: "{info}",
- 			press: "onChatTilePress"
+ 			press: function(oEvent)
+ 			{
+ 				console.log(oEvent.getSource().getTitle());
+ 				var nextPage = sap.ui.getCore().getElementById("idChatWindow");//sap.ui.view({id:"idCreateTask", viewName:"pages.Detail_CreateTask", type:sap.ui.core.mvc.ViewType.XML});
+ 				//nextPage.byId("idDate").setDateValue(selectedDate);
+ 				sap.ui.getCore().getElementById("splitAppId").toDetail(nextPage);
+ 			}
  		});
+ 		
+ 		
  		var oContainer = new sap.m.TileContainer("idTileContainer", {
  			tiles: {
  				path: "/ChatRoomTiles",
@@ -39,7 +47,11 @@ sap.ui.jsview("pages.Detail_ChatRoom", {
  			icon: "sap-icon://lab",
  			number: "3",
  			title: "Some title",
- 			info: "Info"
+ 			info: "Info",
+ 				press: function()
+ 				{
+ 					console.log('Pressedddd');
+ 				}
  		});
  		var oContainer = new sap.m.TileContainer({
  			

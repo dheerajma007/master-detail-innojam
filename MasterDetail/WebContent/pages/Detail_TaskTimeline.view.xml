@@ -1,6 +1,6 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.suite.ui.commons" xmlns:m="sap.m"
 		controllerName="pages.Detail_TaskTimeline" xmlns:html="http://www.w3.org/1999/xhtml">
-	<m:Page title="Title">
+	<m:Page title="Tasks">
 		<m:content>
 		<m:VBox alignItems="Center">
 			<Timeline id="idTaskTimeline" 

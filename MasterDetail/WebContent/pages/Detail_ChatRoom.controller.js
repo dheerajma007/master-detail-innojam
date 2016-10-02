@@ -53,7 +53,7 @@ sap.ui.controller("pages.Detail_ChatRoom", {
 //
 //	}
 	
-	onChatTilePress: function(oEvent)
+	onChatTilePress: function()
 	{
 		console.log('Pressed Tile');
 	}
