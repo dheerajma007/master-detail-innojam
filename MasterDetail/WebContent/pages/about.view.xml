@@ -1,0 +1,29 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="pages.about" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="About">
+		<content>
+			<Image xmlns="sap.m" id="myIM1" busy="false"
+				busyIndicatorDelay="1000" class="sapUiSmallMargin" visible="true" fieldGroupIds="" src="ui5about/About.jpeg"
+				width="" height="" decorative="true" alt="" useMap="" densityAware="true"
+				activeSrc="" mode="Image" backgroundSize="cover" backgroundPosition="initial"
+				backgroundRepeat="no-repeat" validateFieldGroup="" tap="" press=""
+				load="" error="">
+				<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+				<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+			</Image>
+			<TextArea xmlns="sap.m" id="myTA1" busy="false"
+				busyIndicatorDelay="1000" class="sapUiSmallMargin" visible="true"
+				fieldGroupIds=""
+				value="We are group of scientists from different countries collaborating on Climate Change. Agriculture is one of the gprimers in increased carbon footprint. We are innovating on farming methodologies which would reduce the CO2 emissions. It is our continuous effort to make the World a better place for sustainable living  Let us march towards #SMARTer2030"
+				width="550px" enabled="true" valueState="None" name="" placeholder=""
+				editable="false" valueStateText="" showValueStateMessage="true"
+				textAlign="Initial" textDirection="Inherit" required="false" rows="2"
+				cols="20" height="100px" maxLength="0" wrapping="None"
+				valueLiveUpdate="false" growing="false" growingMaxLines="0"
+				ariaLabelledBy="" validateFieldGroup="" change="" liveChange="">
+				<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+				<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+			</TextArea>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,89 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="pages.Form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="FileUploader">
+		<content>
+			<Grid xmlns="sap.ui.layout" id="myG1" busy="false"
+				busyIndicatorDelay="1000" visible="true" fieldGroupIds="" width="140%"
+				
+				validateFieldGroup="">
+				<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+				<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+				<content>
+					<Text xmlns="sap.m" id="myText" busy="false"
+						busyIndicatorDelay="1000" visible="true" fieldGroupIds="" text="Add Content"
+						textDirection="Inherit" wrapping="true" textAlign="Begin" width="100px"
+						maxLines="1" validateFieldGroup="">
+						<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+						<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+					</Text>
+					<VBox xmlns="sap.m" id="id" busy="false" busyIndicatorDelay="1000" class="sapUIMediumMarginTop"
+						visible="true" fieldGroupIds="" height="" width="" displayInline="false"
+						direction="Column" fitContainer="false" renderType="Div"
+						justifyContent="Start"  backgroundDesign="Transparent"
+						validateFieldGroup="">
+						<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+						<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+						<items>
+							<TextField xmlns="sap.ui.commons" id="myTF1" busy="false"
+								busyIndicatorDelay="1000" class="sapUiMediumMarginTop" visible="true" fieldGroupIds="" value=""
+								textDirection="Inherit" enabled="true" editable="true" required="false"
+								width="350px" maxLength="0" valueState="None" textAlign="Begin"
+								imeMode="Auto" design="Standard" helpId="" accessibleRole="Textbox"
+								name="" placeholder="" ariaDescribedBy="" ariaLabelledBy=""
+								validateFieldGroup="" change="" liveChange="">
+								<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+								<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+							</TextField>
+							<TextArea xmlns="sap.m" id="myTA1" busy="false"
+								busyIndicatorDelay="1000" class="sapUiMediumMarginTop" visible="true" fieldGroupIds="" value=""
+								width="550px" enabled="true" valueState="None" name=""
+								placeholder="" editable="true" valueStateText=""
+								showValueStateMessage="true" textAlign="Initial" textDirection="Inherit"
+								required="false" rows="2" cols="20" height="200px" maxLength="0"
+								wrapping="None" valueLiveUpdate="false" growing="false"
+								growingMaxLines="0" ariaLabelledBy="" validateFieldGroup=""
+								change="" liveChange="">
+								<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+								<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+							</TextArea>
+							<FileUploader xmlns="sap.ui.unified" id="myFUP1"
+								busy="false" busyIndicatorDelay="1000" class="sapUiMediumMarginTop" visible="true"
+								fieldGroupIds="" value="" enabled="true" uploadUrl="" name="Attach"
+								width="" uploadOnChange="false" additionalData=""
+								sameFilenameAllowed="false" buttonText="Browse" fileType="txt"
+								multiple="false" maximumFileSize="0.5" mimeType="text" sendXHR="false"
+								placeholder="" style="Emphasized" buttonOnly="false"
+								useMultipart="true" maximumFilenameLength="25" valueState="None"
+								icon="" iconHovered="" iconSelected="" iconFirst="true"
+								iconOnly="false" validateFieldGroup="" change="handleChange"
+								uploadComplete="handleUploadComplete" typeMissmatch=""
+								fileSizeExceed="" fileAllowed="" uploadProgress="handleUploadProgress"
+								uploadAborted="" filenameLengthExceed="" uploadStart="">
+								<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+								<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+								<parameters> <!-- sap.ui.unified.FileUploaderParameter, since 1.12.2 -->
+									<FileUploaderParameter xmlns="sap.ui.unified"
+										id="id1" name="" value="">
+										<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+										<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+									</FileUploaderParameter>
+								</parameters>
+								<headerParameters></headerParameters> <!-- sap.ui.unified.FileUploaderParameter -->
+							</FileUploader>
+							<Button xmlns="sap.m" id="myButton" busy="false"
+								busyIndicatorDelay="1000" class="sapUiMediumMarginTop" visible="true" fieldGroupIds="" text="Publish"
+								type="Accept" width="" enabled="true" icon="" iconFirst="true"
+								activeIcon="" iconDensityAware="true" textDirection="Inherit"
+								ariaDescribedBy="" ariaLabelledBy="" validateFieldGroup="" tap=""
+								press="">
+								<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
+								<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
+							</Button>
+						</items> <!-- sap.ui.core.Control -->
+					</VBox>
+
+				</content> <!-- sap.ui.core.Control -->
+			</Grid>
+		</content>
+	</Page>
+</core:View>

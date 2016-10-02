@@ -1,0 +1,33 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="pages.Detail_DiscussionWindow" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Discussion Room">
+		<content>
+		<l:VerticalLayout width="100%">
+				<l:content>
+					<TextArea id="idChatText" width="80%" class="sapUiMediumMargin" rows="10" editable="false"></TextArea>
+					<List id="idChatList">
+					</List>
+					<FlexBox class="sapUiMediumMarginBegin"
+							alignItems="Start">
+							<items>
+								<Input id="idChatInput" type="text" width="100%">
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Input>
+								<Button id="idChatSendButton" text="Send" width="20%" press="onSendButtonClick" class="sapUiSmallMarginBegin">
+									<layoutData>
+										<FlexItemData growFactor="1" />
+									</layoutData>
+								</Button>
+							</items>
+						</FlexBox>
+					
+					
+				</l:content>
+			</l:VerticalLayout>
+		
+		
+		</content>
+	</Page>
+</core:View>
